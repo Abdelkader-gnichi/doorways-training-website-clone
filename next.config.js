@@ -1,8 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  distDir: 'out',
-  allowedDevOrigins: ["*.preview.same-app.com"],
+  output: "export",
+  distDir: "out",
+  allowedDevOrigins: [
+    "*",
+    "*.preview.same-app.com",
+    "evolving-rationally-dragon.ngrok-free.app",
+    "*.ngrok-free.app",
+    "*.ngrok.io",
+    "*.ngrok.app",
+  ],
   images: {
     unoptimized: true,
     domains: [
@@ -35,5 +42,4 @@ const nextConfig = {
     ],
   },
 };
-
 module.exports = nextConfig;
